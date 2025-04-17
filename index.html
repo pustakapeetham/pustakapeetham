@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eBook Bundles Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2b2d42;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+      flex: 1;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    .card-content p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .card-content .price {
+      font-weight: bold;
+      color: #ef233c;
+    }
+    .buy-btn {
+      display: block;
+      text-align: center;
+      background: #ef233c;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-top: 1px solid #eee;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2b2d42;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Digital eBook Bundles Store</h1>
+    <p>Explore and purchase curated templates and eBook collections</p>
+  </header>
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Bundle Image" />
+      <div class="card-content">
+        <h3>Creative Writing eBook Pack</h3>
+        <p>Includes 10 PDF guides for fiction and non-fiction writing.</p>
+        <p class="price">₹199</p>
+      </div>
+      <a href="https://your-google-form-link.com?product=Creative+Writing+eBook+Pack" class="buy-btn">Buy Now</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Bundle Image" />
+      <div class="card-content">
+        <h3>Business Templates Pack</h3>
+        <p>Downloadable templates for invoices, proposals, and reports.</p>
+        <p class="price">₹299</p>
+      </div>
+      <a href="https://your-google-form-link.com?product=Business+Templates+Pack" class="buy-btn">Buy Now</a>
+    </div>
+    <!-- Add more product cards as needed -->
+  </div>
+  <footer>
+    <p>&copy; 2025 Your Brand. All rights reserved.</p>
+  </footer>
+</body>
+</html>
